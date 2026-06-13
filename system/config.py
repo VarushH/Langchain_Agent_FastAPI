@@ -8,7 +8,6 @@ from pydantic import Field
 class Settings(BaseSettings):
     app_name: str = "LangChain Agent Showcase"
     openai_api_key: str = Field("", env = "OPENAI_APIKEY")
-
     
     class Config:
         env_file = ".env"
